@@ -8,7 +8,7 @@ function draw() {
     // RGB - ** ** **
     // red - ff 00 00
 
-    background("#ff0000")
+    background("#0000ff")
     smileyFaceDenis();
 
 
@@ -16,7 +16,17 @@ function draw() {
 
 function smileyFaceDenis() {
 
+    // cap
+    fill("#d1ffb8")
     circle(200, 200, 100)
+    fill("#ffffff")
+    // ochii
+    circle(220, 185, 20)
+    circle(180, 185, 20)
+
+        // iris
+        circle(222, 183, 7)
+        circle(178, 183, 7)
     
 }
 
