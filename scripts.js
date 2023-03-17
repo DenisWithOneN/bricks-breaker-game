@@ -8,9 +8,9 @@ function draw() {
     // RGB - ** ** **
     // red - ff 00 00
 
+
     background("#0000ff")
     smileyFaceDenis();
-
 
 }
 
@@ -48,4 +48,5 @@ function smileyFaceDenis() {
     arc(198, 230, 23, 15, 0.3, Math.PI)
     
 }
+
 
