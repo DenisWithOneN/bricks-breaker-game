@@ -16,5 +16,10 @@ function draw() {
 
 
 function smileyFaceRebe() {
+    fill("#b2d5ba"); 
     circle(200, 200, 100); 
+        circle(180, 185, 20); 
+
+        circle(220, 185, 20); 
+
 }
