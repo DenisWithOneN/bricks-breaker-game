@@ -17,7 +17,7 @@ function draw() {
 function smileyFaceDenis() {
 
     // cap
-    fill("#d1ffb8")
+    fill("#b8e4ff")
     circle(200, 200, 100)
     fill("#ffffff")
     // ochii
@@ -25,6 +25,7 @@ function smileyFaceDenis() {
     circle(180, 185, 20)
 
         // iris
+        fill("#000000")
         circle(222, 183, 7)
         circle(178, 183, 7)
     
