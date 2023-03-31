@@ -1,11 +1,23 @@
+// denis
 let moveS1X = 200;
 let moveS1Y = 300;
 
 let speedS1 = 5;
-rayS1 = 100; // 
+rayS1 = 100;
 
 let sensS1X = 1;
 let sensS1Y = 1;
+// denis
+
+//rebe
+let moveS2X = 300;
+let moveS2Y = 400;
+let speedS2 = 5;
+rayS2 = 100;
+
+let sensS2X = 2;
+let sensS2Y = 2;
+//rebe
 
 let limitTop = 0;
 let limitBottom = 400;
@@ -24,21 +36,26 @@ function draw() {
 
   //verificare limita Top S1
   if (moveS1Y < limitTop + rayS1) {
-    sensS1Y = 1; //schimbare de sens
+    sensS1Y = 1;
+    sensS2Y = 2; //schimbare de sens
   }
   //verificare limmita Bottom S1
   if (moveS1Y > limitBottom - rayS1) {
     sensS1Y = -1; //schimbare de sens
+    sensS2Y = -2;
   }
   //verificare limmita Left S1
   if (moveS1X < limitLeft + rayS1) {
     sensS1X = 1; //schimbare de sens
+    sensS2X = 2;
   }
   //verificare limmita Right S1
   if (moveS1X > limitRight - rayS1) {
     sens1X = -1; //schimbare de sens
+    sens2X = -2;
     if (moveS1X > limitRight - rayS1) {
     sensS1X = -1; //schimbare de sens
+    sensS2X = -2;
   }
 
 
@@ -47,8 +64,11 @@ function draw() {
   moveS1X += sensS1X * speedS1;
   moveS1Y += sensS1Y * speedS1;
 
-  smileyFaceRebe(moveS1X, moveS1Y, rayS1 * 2);
-  smileyFaceDenis(moveS1x, moveS1y, rayS1 * 2);
+  moveS2X += sensS2X * speedS2;
+  moveS2Y += sensS2Y * speedS2;
+
+  smileyFaceRebe(moveS2X, moveS2Y, rayS2 * 2);
+  smileyFaceDenis(moveS1X, moveS1Y, rayS1 * 2);
 }
 
 
