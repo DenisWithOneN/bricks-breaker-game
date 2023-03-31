@@ -73,8 +73,3 @@ function smileyFaceDenis(x, y, d) {
     fill("#8cafff")
     arc(x-2, y+13, 35, 50, 0.3, Math.PI)
 
-    // limba
-    fill("#175eff")
-    arc(x-2, y+30, 23, 15, 0.3, Math.PI)
-    
-}
