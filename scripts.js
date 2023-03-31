@@ -1,52 +1,75 @@
+let moveS1X = 300;
+let moveS1Y = 900;
+let speedS1 = 5;
+rayS1 = 100; // 
+
+let sensS1X = 1;
+let sensS1Y = 1;
+
+let limitTop = 0;
+let limitBottom = 400;
+let limitLeft = 0;
+let limitRight = 400;
+
+
 function setup() {
 
     createCanvas(400, 400)
 }
 
 function draw() {
-    // 0,1,2,3 ... a,b,c,d,e,f HEXA
-    // RGB - ** ** **
-    // red - ff 00 00
+  background("#0000ff");
+  
 
+  //verificare limita Top S1
+  if (moveS1Y < limitTop + rayS1) {
+    sensS1Y = 1; //schimbare de sens
+  }
+  //verificare limmita Bottom S1
+  if (moveS1Y > limitBottom - rayS1) {
+    sensS1Y = -1; //schimbare de sens
+  }
+  //verificare limmita Left S1
+  if (moveS1X < limitLeft + rayS1) {
+    sensS1X = 1; //schimbare de sens
+  }
+  //verificare limmita Right S1
+  if (moveS1X > limitRight - rayS1) {
+    sensS1X = -1; //schimbare de sens
+  }
 
-    background("#0000ff")
-    smileyFaceDenis();
+  moveS1X += sensS1X * speedS1;
+  moveS1Y += sensS1Y * speedS1;
 
+  smileyFaceDenis(moveS1X, moveS1Y, rayS1 * 2);
 }
 
-function smileyFaceDenis() {
+function smileyFaceDenis(x, y, d) {
 
     // cap
     fill("#b8e4ff")
-    circle(200, 200, 100)
+    circle(x, y, d)
     fill("#ffffff")
 
     
     // ochii
-    circle(220, 185, 20)
-    circle(180, 185, 20)
+    circle(x+20, y-10, 20)
+    circle(x-20, y-10, 20)
 
         // iris
         fill("#000000")
-        circle(222, 183, 7)
-        circle(178, 183, 7)
+        circle(x+20, y-10, 7)
+        circle(x-20, y-10, 7)
 
     // ochelari
     fill('rgba(0,255,0, 0)');
-    line(203, 185, 198, 185)
+    line(x, y, x, y)
     // line(200, 185, 155, 135)
-    circle(220, 185, 35)
-    circle(180, 185, 35)
+    circle(x+20, y-10, 35)
+    circle(x-20, y-10, 35)
 
 
     // mouth
     fill("#8cafff")
-    arc(198, 213, 35, 50, 0.3, Math.PI)
-
-    // limba
-    fill("#175eff")
-    arc(198, 230, 23, 15, 0.3, Math.PI)
-    
-}
-
+    arc(x-2, y+13, 35, 50, 0.3, Math.PI)
 
