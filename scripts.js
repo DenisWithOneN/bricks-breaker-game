@@ -72,6 +72,7 @@ function smileyFaceRebe(x, y, d) {
      //mouth
     fill("#cb7b97"); 
     arc(x, y+10, 40, 30, 0, Math.PI); 
+}
 
 
 
@@ -108,4 +109,5 @@ function smileyFaceDenis(x, y, d) {
      // limba
     fill("#175eff")
     arc(x-2, y+30, 23, 15, 0.3, Math.PI)
+}
 
