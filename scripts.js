@@ -1,9 +1,5 @@
-
 let moveS1X = 200;
-let moveS1Y = 200;
-=======
-let moveS1X = 300;
-let moveS1Y = 900;
+let moveS1Y = 300;
 
 let speedS1 = 5;
 rayS1 = 100; // 
