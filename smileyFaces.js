@@ -21,7 +21,7 @@ function smileyFaceDenis(x, y, d) {
 
   // cap
   fill("#b8e4ff")
-  circle(x + d*0.20, y - d*0.10, d*0.15);
+  circle(x, y, d);
   fill("#ffffff")
 
   // ochii
@@ -31,16 +31,16 @@ function smileyFaceDenis(x, y, d) {
 
       // iris
       fill("#000000")
-      circle(x+d*0.20, y-d*0.10, 7)
-      circle(x-d*0.20, y-d*0.10, 7)
+      circle(x+d*0.20, y-d*0.10, d*0.20)
+      circle(x-d*0.20, y-d*0.10, d*0.20)
 
   // ochelari
   fill('rgba(0,255,0, 0)');
   line(x, y, x, y)
   
   // line(200, 185, 155, 135)
-  circle(x+d*0.20, y-d*0.10, 35)
-  circle(x-d*0.20, y-d*0.10, 35)
+  circle(x+d*0.20, y-d*0.10, d*1.3)
+  circle(x-d*0.20, y-d*0.10, d*1.3)
 
 
   // mouth
