@@ -1,5 +1,6 @@
 function setup() {
     createCanvas(600, 600);
+    initBricks();
   }
   
   function draw() {
@@ -8,6 +9,8 @@ function setup() {
     SmileFaceDenis.sensX = senseSmileyFaceCheckX(SmileFaceDenis.x,  SmileFaceDenis.ray, SmileFaceDenis.sensX);
     SmileFaceDenis.sensY = senseSmileyFaceCheckY(SmileFaceDenis.y,  SmileFaceDenis.ray, SmileFaceDenis.sensY);
     SmileFaceDenis.sensY = bottomBarCheck(SmileFaceDenis);
+    SmileFaceDenis.sensY = bricksCheck(SmileFaceDenis);
+    
 
     
     sensS2X = senseSmileyFaceCheckX(moveS2X,  rayS2, sensS2X);
@@ -23,4 +26,5 @@ function setup() {
     smileyFaceDenis(SmileFaceDenis.x, SmileFaceDenis.y, SmileFaceDenis.ray * 2);
     smileyFaceRebe(moveS2X, moveS2Y, rayS2 *2);
     bottomBar();
+    showBricks();
   }

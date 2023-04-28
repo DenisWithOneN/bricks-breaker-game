@@ -1,8 +1,10 @@
+let bricks = [];
+
 const SmileFaceDenis = {
 
     x: 200,
     y: 100,
-    speed: 1,
+    speed: 5,
     ray: 20,
     sensX: 1,
     sensY: 1,
