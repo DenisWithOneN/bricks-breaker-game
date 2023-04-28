@@ -9,15 +9,15 @@ function setup() {
     SmileFaceDenis.sensY = senseSmileyFaceCheckY(SmileFaceDenis.y,  SmileFaceDenis.ray, SmileFaceDenis.sensY);
 
     
-    sensS2X = senseSmileyFaceCheckX(moveS2X,  rayS2, sensS2X);
-    sensS2Y =senseSmileyFaceCheckY(moveS2Y,  rayS2, sensS2Y);
+    SmileFaceRebe.sensX =  senseSmileyFaceCheckX(SmileFaceRebe.x,  SmileFaceRebe.ray, SmileFaceRebe.sensX);
+    SmileFaceRebe.sensY =  senseSmileyFaceCheckY(SmileFaceRebe.y,  SmileFaceRebe.ray, SmileFaceRebe.sensY);
   
     SmileFaceDenis.x += SmileFaceDenis.sensX * SmileFaceDenis.speed;
     SmileFaceDenis.y += SmileFaceDenis.sensY * SmileFaceDenis.speed;
   
-    moveS2X += sensS2X * speedS2;
-    moveS2Y += sensS2Y * speedS2;
+    SmileFaceRebe.x += SmileFaceRebe.sensX * SmileFaceRebe.speed;
+    SmileFaceRebe.y += SmileFaceRebe.sensY * SmileFaceRebe.speed;
     
     smileyFaceDenis(SmileFaceDenis.x, SmileFaceDenis.y, SmileFaceDenis.ray * 2);
-    smileyFaceRebe(moveS2X, moveS2Y, rayS2 *2);
+    smileyFaceRebe (SmileFaceRebe.x,  SmileFaceRebe.y,   SmileFaceRebe.ray * 2);
   }

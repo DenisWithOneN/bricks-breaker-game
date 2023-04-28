@@ -8,15 +8,17 @@ const SmileFaceDenis = {
     sensY: 1,
 }
 
-//rebe
-let moveS2X = 300;
-let moveS2Y = 400;
-let speedS2 = 3;
-rayS2 = 50;
+const SmileFaceRebe = {
 
-let sensS2X = 2;
-let sensS2Y = 2;
-//rebe
+    x: 300,
+    y: 400,
+    speed: 3,
+    ray: 50,
+    sensX: 2,
+    sensY: 2,
+}
+
+
 
 let limitTop = 0;
 let limitBottom = 600;
