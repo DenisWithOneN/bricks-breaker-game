@@ -3,7 +3,7 @@ const SmileFaceDenis = {
     x: 200,
     y: 100,
     speed: 2,
-    ray: 15,
+    ray: 50,
     sensX: 1,
     sensY: 1,
 }

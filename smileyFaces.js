@@ -25,27 +25,27 @@ function smileyFaceDenis(x, y, d) {
   fill("#ffffff")
 
   // ochii
-  circle(x - d*0.20, y - d*0.10, d*0.5);
-  circle(x + d*0.20, y - d*0.10, d*0.5);
+  circle(x - d*0.20, y - d*0.10, d*0.2);
+  circle(x + d*0.20, y - d*0.10, d*0.2);
 
 
       // iris
       fill("#000000")
-      circle(x+d*0.20, y-d*0.10, d*0.20)
-      circle(x-d*0.20, y-d*0.10, d*0.20)
+      circle(x+d*0.20, y-d*0.10, d*0.08)
+      circle(x-d*0.20, y-d*0.10, d*0.08)
 
   // ochelari
   fill('rgba(0,255,0, 0)');
-  line(x, y, x, y)
+  line(x, y, x + d * 0.1, y)
   
   // line(200, 185, 155, 135)
-  circle(x+d*0.20, y-d*0.10, d*1.3)
-  circle(x-d*0.20, y-d*0.10, d*1.3)
+  circle(x+d*0.20, y-d*0.10, d*0.35)
+  circle(x-d*0.20, y-d*0.10, d*0.35)
 
 
   // mouth
   fill("#8cafff")
-  arc(x-d*0.02, y+d*0.13, 35, 50, 0.3, Math.PI)
+  arc(x-d*0.02, y+d*0.13, d * 0.35, d * 0.5, d* 0.3, Math.PI)
   
    // limba
   fill("#175eff")
