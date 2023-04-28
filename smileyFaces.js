@@ -45,11 +45,11 @@ function smileyFaceDenis(x, y, d) {
 
   // mouth
   fill("#8cafff")
-  arc(x-d*0.02, y+d*0.13, d * 0.35, d * 0.5, d* 0.3, Math.PI)
+  arc(x-d*0.02, y+d*0.13, d * 0.35, d * 0.5, d * 0.3, Math.PI)
   
    // limba
   fill("#175eff")
-  arc(x-2, y+d*0.30, 23, 15, 0.3, Math.PI)
+  arc(x-d*0.02, y+d*0.30, d* 0.23, d*0.15, d* 0.3, Math.PI)
 }
 
 function senseSmileyFaceCheckY(y, ray, s) {
